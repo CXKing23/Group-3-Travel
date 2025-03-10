@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packing Checklist</title>
+    <style>
+        header {
+            background-color: #000;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+        
+        a {
+            color: #6EC6D9;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #6EC6D9;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .checklist-container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 2px solid #000;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .checklist-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .checklist-item input {
+            margin-right: 10px;
+        }
+        .btn {
+            background-color: #000;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            border: none;
+            font-size: 1em;
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+    </style>
+    <header>
+        <a href="index.html">Travel Adventure</a>
+    </header>
+</head>
+<body>
+    
+
+    <div class="checklist-container">
+        <h2>Packing Checklist</h2>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="passport">
+            <label for="passport">Passport</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="tickets">
+            <label for="tickets">Travel Tickets</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="id-card">
+            <label for="id-card">ID Card/Driver's License</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="money">
+            <label for="money">Cash/Credit Cards</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="clothes">
+            <label for="clothes">Clothes</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="shoes">
+            <label for="shoes">Shoes</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="toiletries">
+            <label for="toiletries">Toiletries</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="electronics">
+            <label for="electronics">Electronics (Phone, Charger, etc.)</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="medications">
+            <label for="medications">Medications</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="sunglasses">
+            <label for="sunglasses">Sunglasses</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="travel-guide">
+            <label for="travel-guide">Travel Guide/Map</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="snacks">
+            <label for="snacks">Snacks</label>
+        </div>
+
+        <button class="btn" onclick="resetChecklist()">Reset Checklist</button>
+    </div>
+
+    <script>
+        function resetChecklist() {
+            var items = document.querySelectorAll('.checklist-item input');
+            items.forEach(function(item) {
+                item.checked = false;
+            });
+        }
+    </script>
+
+</body>
+</html>

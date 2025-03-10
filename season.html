@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Adventure</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-size: 18px;
+        }
+
+        header {
+            background-color: #000;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        section {
+            padding: 20px;
+            margin-top: 60px;
+            width: 100%;
+            background-color: #000;
+            flex: 1;
+        }
+
+        footer {
+            background-color: #222;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header.sticky {
+            background-color: #222;
+        }
+
+        h1, h2 {
+            color: #fff;
+        }
+
+        p {
+            color: #aaa;
+        }
+
+        a {
+            color: #6EC6D9;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #6EC6D9;
+        }
+
+        .about-image {
+            width: 100%; /* Fill up the entire width of the container */
+            max-width: 700px; /* Slightly larger maximum width */
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <header>
+        <a href="index.html">Travel Adventure</a>
+    </header>
+</head>
+<body>
+    Country: Best Season to Travel   <br>   
+        <br> Afghanistan      <br> Spring (March to May) and Fall (September to November)  
+        <br> Albania          <br> Spring (April to June) and Fall (September to October)  
+        <br> Algeria          <br> Spring (March to May) and Fall (October to November) 
+        <br> Andorra          <br> Late Spring to Early Fall (May to September)  
+        <br> Angola           <br> Dry Season (May to October) 
+        <br> Antigua and Barbuda  <br> Late Fall to Early Spring (December to April) 
+        <br> Argentina        <br> Spring (September to November) and Fall (March to May) 
+        <br> Armenia          <br> Spring (April to June) and Fall (September to November)  
+        <br> Australia        <br> Spring (September to November) and Fall (March to May)  
+        <br> Austria          <br> Late Spring to Early Fall (May to September)  
+        <br> Azerbaijan       <br> Spring (April to June) and Fall (September to November) <br>
+        <br> Bahamas          <br> Late Fall to Early Spring (December to April)  
+        <br> Bahrain          <br> Fall (October to December) and Spring (March to May)  
+        <br> Bangladesh       <br> Winter (November to February) and Fall (October to November) 
+        <br> Barbados         <br> Late Fall to Early Spring (December to April) 
+        <br> Belarus          <br> Late Spring to Early Fall (May to September)  
+        <br> Belgium          <br> Late Spring to Early Fall (May to September)  
+        <br> Belize           <br> Late Fall to Early Spring (November to April)  
+        <br> Benin            <br> Dry Season (November to April)  
+        <br> Bhutan           <br> Spring (March to May) and Fall (September to November) 
+        <br> Bolivia          <br> Dry Season (May to October) 
+        <br> Bosnia and Herzegovina  <br> Late Spring to Early Fall (May to September)  
+        <br> Botswana         <br> Dry Season (May to October)  
+        <br> Brazil           <br> Depends on the Region - Generally Late Fall to Early Spring (May to September) for many areas  
+        <br> Brunei           <br> Late Fall to Early Spring (December to February) 
+        <br> Bulgaria         <br> Late Spring to Early Fall (May to September)  
+        <br> Burkina Faso     <br> Dry Season (November to April)  
+        <br> Burundi          <br> Dry Season (June to September) and Short Dry Season (December to January)  <br>
+        <br> Cabo Verde       <br> Late Fall to Early Spring (December to April)  
+        <br> Cambodia         <br> Dry Season (November to April)  
+        <br> Cameroon         <br> Dry Season (November to February)  
+        <br> Canada           <br> Late Spring to Early Fall (June to September) for most regions  
+        <br> Central African Republic  <br> Dry Season (December to March)  
+        <br> Chad             <br> Dry Season (November to April)  
+        <br> Chile            <br> Depends on the Region - Generally Late Fall to Early Spring (October to April) for many areas  
+        <br> China            <br> Depends on the Region - Generally Spring (April to June) and Fall (September to November) for many areas  
+        <br> Colombia         <br> Dry Season (December to March) and Second Dry Season (July to August)  
+        <br> Comoros          <br> Dry Season (May to October)  
+        <br> Democratic Republic of the Congo  <br> Dry Season (June to September)  
+        <br> Republic of the Congo  <br> Dry Season (June to September)  
+        <br> Costa Rica       <br> Dry Season (December to April)  
+        <br> Croatia          <br> Late Spring to Early Fall (May to September)  
+        <br> Cuba             <br> Late Fall to Early Spring (November to April)  
+        <br> Cyprus           <br> Late Spring to Early Fall (May to September)  
+        <br> Czech Republic    <br> Late Spring to Early Fall (May to September) <br>
+        <br> Denmark          <br> Late Spring to Early Fall (May to September)  
+        <br> Djibouti         <br> Late Fall to Early Spring (October to April)  
+        <br> Dominica         <br> Late Fall to Early Spring (November to April)  
+        <br> Dominican Republic  <br> Late Fall to Early Spring (December to April) <br>
+        <br> East Timor (Timor-Leste)  <br> Dry Season (June to October)  
+        <br> Ecuador          <br> Depends on the Region - Generally Late Fall to Early Spring (June to September) for many areas  
+        <br> Egypt            <br> Spring (March to May) and Fall (September to November)  
+        <br> El Salvador      <br> Dry Season (November to April)  
+        <br> Equatorial Guinea  <br> Dry Season (December to February)  
+        <br> Eritrea          <br> Late Fall to Early Spring (November to April)  
+        <br> Estonia          <br> Late Spring to Early Fall (June to September)  
+        <br> Eswatini         <br> Late Fall to Early Spring (May to August)  
+        <br> Ethiopia         <br> Depends on the Region - Generally Late Fall to Early Spring (October to April) for many areas  <br>
+        <br> Fiji             <br> Late Fall to Early Spring (May to October)  
+        <br> Finland          <br> Late Spring to Early Fall (June to September)  
+        <br> France           <br> Late Spring to Early Fall (May to September)  <br>
+        <br> Gabon            <br> Dry Season (June to September)  
+        <br> The Gambia       <br> Dry Season (November to June)  
+        <br> Georgia          <br> Late Spring to Early Fall (May to September)  
+        <br> Germany          <br> Late Spring to Early Fall (May to September)  
+        <br> Ghana            <br> Dry Season (November to March)  
+        <br> Greece           <br> Late Spring to Early Fall (May to September)  
+        <br> Grenada          <br> Late Fall to Early Spring (December to April)  
+        <br> Guatemala        <br> Dry Season (November to April)  
+        <br> Guinea           <br> Dry Season (November to March)  
+        <br> Guinea-Bissau    <br> Dry Season (November to April)  
+        <br> Guyana           <br> Dry Season (September to November)  <br>
+        <br> Haiti            <br> Late Fall to Early Spring (November to April)  
+        <br> Honduras         <br> Dry Season (November to April)  
+        <br> Hungary          <br> Late Spring to Early Fall (May to September)  <br>
+        <br> Iceland          <br> Late Spring to Early Fall (June to September)  
+        <br> India            <br> Depends on the Region - Generally Late Fall to Early Spring (October to March) for many areas  
+        <br> Indonesia        <br> Depends on the Region - Generally Late Fall to Early Spring (May to September) for many areas  
+        <br> Iran             <br> Depends on the Region - Generally Late Fall to Early Spring (March to May and September to November) for many areas  
+        <br> Iraq             <br> Fall (October to December) and Spring (March to May)  
+        <br> Ireland          <br> Late Spring to Early Fall (May to September)  
+        <br> Israel           <br> Late Fall to Early Spring (October to April)  
+        <br> Italy            <br> Late Spring to Early Fall (May to September)  
+        <br> Ivory Coast      <br> Dry Season (December to April)  <br>
+        <br> Jamaica          <br> Late Fall to Early Spring (November to December)  
+        <br> Japan            <br> Late Spring to Early Fall (March to November)  
+        <br> Jordan           <br> Late Fall to Early Spring (October to April)  <br>
+        <br> Kazakhstan       <br> Late Spring to Early Fall (May to September)  
+        <br> Kenya            <br> Dry Season (June to October) and Short Dry Season (December
+       
+        to March)  
+        <br> Kiribati         <br> Depends on the Atoll - Generally Late Fall to Early Spring (November to March) for many areas  
+        <br> North Korea      <br> Late Spring to Early Fall (April to October)  
+        <br> South Korea      <br> Late Spring to Early Fall (April to October)  
+        <br> Kosovo           <br> Late Spring to Early Fall (May to September)  
+        <br> Kuwait           <br> Fall (October to November) and Spring (March to April)  
+        <br> Kyrgyzstan       <br> Late Spring to Early Fall (May to September)  <br>
+        <br> Laos             <br> Dry Season (November to March)  
+        <br> Latvia           <br> Late Spring to Early Fall (June to September) 
+        <br> Lebanon          <br> Late Spring to Early Fall (April to October)  
+        <br> Lesotho          <br> Late Spring to Early Fall (September to April)  
+        <br> Liberia          <br> Dry Season (November to April)  
+        <br> Libya            <br> Spring (March to May) and Fall (September to November)  
+        <br> Liechtenstein    <br> Late Spring to Early Fall (May to September) 
+        <br> Lithuania       <br> Late Spring to Early Fall (June to September)  
+        <br> Luxembourg       <br> Late Spring to Early Fall (May to September)  <br>
+        <br> Madagascar       <br> Dry Season (May to October)  
+        <br> Malawi           <br> Dry Season (May to October)  
+        <br> Malaysia         <br> Dry Season (June to September) for West Coast and Borneo  
+        <br> Maldives         <br> Dry Season (December to April)  
+        <br> Mali             <br> Dry Season (November to April)  
+        <br> Malta            <br> Late Spring to Early Fall (April to October)  
+        <br> Marshall Islands  <br> Late Fall to Early Spring (November to April)  
+        <br> Mauritania       <br> Dry Season (November to April)  
+        <br> Mauritius        <br> Late Fall to Early Spring (May to December)  
+        <br> Mexico           <br> Depends on the Region - Generally Late Fall to Early Spring (November to April) for many areas  
+        <br> Micronesia       <br> Dry Season (December to April) 
+        <br> Moldova          <br> Late Spring to Early Fall (May to September)  
+        <br> Monaco           <br> Late Spring to Early Fall (May to September)  
+        <br> Mongolia         <br> Late Spring to Early Fall (May to September)  
+        <br> Montenegro       <br> Late Spring to Early Fall (May to September)  
+        <br> Morocco          <br> Late Fall to Early Spring (October to April)  
+        <br> Mozambique       <br> Dry Season (May to October)  
+        <br> Myanmar (Burma)  <br> Dry Season (November to February)  <br>
+        <br> Namibia          <br> Dry Season (May to October)  
+        <br> Nauru            <br> Late Fall to Early Spring (November to April)  
+        <br> Nepal            <br> Depends on the Region - Generally Late Fall to Early Spring (October to March) for many areas  
+        <br> Netherlands       <br> Late Spring to Early Fall (May to September)  
+        <br> New Zealand       <br> Late Spring to Early Fall (October to April)  
+        <br> Nicaragua         <br> Dry Season (November to April)  
+        <br> Niger             <br> Dry Season (November to April)  
+        <br> Nigeria           <br> Dry Season (November to March)  
+        <br> North Macedonia (formerly Macedonia)  <br> Late Spring to Early Fall (May to September)  
+        <br> Norway           <br> Late Spring to Early Fall (June to September)  <br>
+        <br> Oman             <br> Late Fall to Early Spring (November to March)  <br>
+        <br> Pakistan         <br> Depends on the Region - Generally Late Fall to Early Spring (October to March) for many areas  
+        <br> Palau            <br> Late Fall to Early Spring (November to April)  
+        <br> Panama           <br> Late Fall to Early Spring (December to April)  
+        <br> Papua New Guinea  <br> Dry Season (May to October)  
+        <br> Paraguay         <br> Late Fall to Early Spring (April to October)  
+        <br> Peru             <br> Depends on the Region - Generally Late Fall to Early Spring (May to September) for many areas  
+        <br> Philippines      <br> Dry Season (November to April)  
+        <br> Poland           <br> Late Spring to Early Fall (May to September) 
+        <br> Portugal         <br> Late Spring to Early Fall (May to September)  <br>
+        <br> Qatar            <br> Fall (October to February)  <br>
+        <br> Romania          <br> Late Spring to Early Fall (May to September) 
+        <br> Russia           <br> Depends on the Region - Generally Late Spring to Early Fall (May to September) for many areas  
+        <br> Rwanda           <br> Dry Season (June to September)  <br>
+        <br> Saint Kitts and Nevis  <br> Late Fall to Early Spring (December to April)  
+        <br> Saint Lucia       <br> Late Fall to Early Spring (December to April)  
+        <br> Saint Vincent and the Grenadines  <br> Late Fall to Early Spring (December to April)  
+        <br> Samoa             <br> Late Fall to Early Spring (May to October)  
+        <br> San Marino        <br> Late Spring to Early Fall (May to September)  
+        <br> Sao Tome and Principe  <br> Late Fall to Early Spring (May to September)  
+        <br> Saudi Arabia      <br> Fall (October to March)  
+        <br> Senegal           <br> Dry Season (November to April)  
+        <br> Serbia            <br> Late Spring to Early Fall (May to September)  
+        <br> Seychelles        <br> Late Fall to Early Spring (November to April)  
+        <br> Sierra Leone      <br> Dry Season (November to April)  
+        <br> Singapore         <br> Late Fall to Early Spring (December to February)  
+        <br> Slovakia          <br> Late Spring to Early Fall (May to September)  
+        <br> Slovenia          <br> Late Spring to Early Fall (May to September)  
+        <br> Solomon Islands   <br> Late Fall to Early Spring (May to October)  
+        <br> Somalia           <br> Late Fall to Early Spring (December to April)  
+        <br> South Africa      <br> Depends on the Region - Generally Late Fall to Early Spring (May to September) for many areas  
+        <br> South Sudan       <br> Dry Season (December to March)  
+        <br> Spain                    <br> Spring (April - June) and Fall (September - November)  
+        <br> Sri Lanka                <br> Winter (December - March) and Summer (April - September)  
+        <br> Sudan                    <br> Winter (November - February)           
+        <br> Suriname                 <br> Dry Season (February - August)          
+        <br> Sweden                   <br> Summer (June - August)                   
+        <br> Switzerland              <br> Summer (June - August) and Winter (December - February) for skiing  
+        <br> Syria                    <br> Spring (April - June) and Fall (September - November) <br>
+        <br> Taiwan                   <br> Fall (September - November)              
+        <br> Tajikistan               <br> Spring (April - June) and Fall (September - November)  
+        <br> Tanzania                 <br> Dry Season (June - October)             
+        <br> Thailand                 <br> Cool and Dry Season (November - February)  
+        <br> Togo                     <br> Fall (November - February)               
+        <br> Tonga                    <br> May to October is generally good         
+        <br> Trinidad and Tobago      <br> Dry Season (January - May)               
+        <br> Tunisia                  <br> Spring (March - May) and Fall (September - November) 
+        <br> Turkey                   <br> Spring (April - June) and Fall (September - November)  
+        <br> Turkmenistan             <br> Spring (April - June) and Fall (September - November)  
+        <br> Tuvalu                   <br> April to October is generally good   <br>
+        <br> Uganda                   <br> Dry Season (December - February and June - August)  
+        <br> Ukraine                  <br> May to September is generally good       
+        <br> United Arab Emirates     <br> Winter (November - March) and Fall (September - November)
+        <br> United Kingdom           <br> Summer (June - August)                   
+        <br> United States            <br> Varies by region - Summer (June - August) for many areas  
+        <br> Uruguay                  <br> Spring (September - November)           
+        <br> Uzbekistan               <br> Spring (April - June) and Fall (September - November) <br> 
+        <br> Vanuatu                  <br> April to October is generally good      
+        <br> Vatican City (Holy See)   <br> Spring (April - June) and Fall (September - November)  
+        <br> Venezuela                <br> December to April is generally good     
+        <br> Vietnam                  <br> North: Fall (September - November), Central: Winter (December - February), South: Winter (December - April) <br> 
+        <br> Yemen                    <br> October to March is generally good    <br> 
+        <br> Zambia                   <br> Dry Season (May - October)              
+        <br> Zimbabwe                 <br> Dry Season (May - October)                     
+</body>
