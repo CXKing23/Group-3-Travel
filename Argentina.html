@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argentina - Travel Adventure</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-size: 18px;
+        }
+
+        header {
+    background-color: #000;
+    padding: 15px 0; 
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+section {
+    padding: 20px;
+    margin-top: 80px;
+    width: 100%;
+    background-color: #000;
+    flex: 1;
+}
+
+
+        footer {
+            background-color: #222;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header.sticky {
+            background-color: #222;
+        }
+
+        h1, h2 {
+            color: #fff;
+        }
+
+        p {
+            color: #aaa;
+        }
+
+        .about-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        footer a {
+            color: #6EC6D9;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #6EC6D9;
+        }
+
+        .quick-facts {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .quick-facts h3 {
+            color: #6EC6D9;
+        }
+
+        .quick-facts p {
+            margin-bottom: 10px;
+        }
+
+        .must-see-attractions h3 {
+            color: #6EC6D9;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <h1>Argentina</h1>
+    </header>
+
+    <section>
+        <h2>Our Story</h2>
+        <img class="about-image" src="argentina.jpeg" alt="Argentina Image">
+        <p>Argentina is a land of passion, from the lively streets of Buenos Aires to the breathtaking landscapes of Patagonia. As the birthplace of tango, the country has a rich cultural heritage, blending European influences with Latin American traditions. Its diverse geography offers everything from Andean peaks to lush vineyards and vast pampas.</p>
+
+        <p>At Travel Adventure, we are excited to guide you through Argentina’s stunning natural wonders, vibrant cities, and unique cultural experiences. Whether you're here for the food, music, or adventure, Argentina is a must-visit destination.</p>
+
+        <div class="quick-facts">
+            <h3>Language</h3>
+            <p>The official language of Argentina is Spanish. However, English is widely understood in tourist areas, and Italian and Portuguese are also spoken by some locals.</p>
+        </div>
+
+        <div class="must-see-attractions">
+            <h3>Must-see Attractions</h3>
+            <p><strong>1. Buenos Aires</strong> – The vibrant capital city, famous for tango, historic architecture, and a lively nightlife.</p>
+            <p><strong>2. Iguazú Falls</strong> – One of the world’s most spectacular waterfalls, located on the border with Brazil.</p>
+            <p><strong>3. Patagonia</strong> – A vast region with glaciers, mountains, and incredible wildlife, perfect for adventure seekers.</p>
+            <p><strong>4. Mendoza</strong> – Argentina’s wine country, known for its world-class Malbec wines.</p>
+            <p><strong>5. Perito Moreno Glacier</strong> – A stunning, ever-moving glacier in Los Glaciares National Park.</p>
+        </div>
+
+        <div class="quick-facts">
+            <h3>Visa Facts</h3>
+            <p><strong>PASSPORT VALIDITY:</strong> Must be valid at time of entry</p>
+            <p><strong>BLANK PASSPORT PAGES:</strong> One page required</p>
+            <p><strong>TOURIST VISA REQUIRED:</strong> No, for stays under 90 days</p>
+            <p><strong>VACCINATIONS:</strong> None required</p>
+            <p><strong>CURRENCY RESTRICTIONS FOR ENTRY:</strong> None</p>
+            <p><strong>CURRENCY RESTRICTIONS FOR EXIT:</strong> None</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Travel Adventure. All rights reserved.<br>
+            <a href="aboutus.html">About Us</a><br>
+            <a href="contactus.html">Contact Us</a><br>
+            <a href="index.html">Home</a><br>
+        </p>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            const header = document.getElementById('main-header');
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 100) {
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
+            }
+        };
+    </script>
+
+</body>
+</html>
