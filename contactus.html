@@ -5,112 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Travel Adventure</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: #000;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            font-size: 18px;
-        }
-
-        header {
-            background-color: #000;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            transition: background-color 0.3s ease;
-        }
-
-        section {
-            padding: 20px;
-            margin-top: 60px;
-            width: 100%;
-            background-color: #000;
-            flex: 1;
-        }
-
-        footer {
-            background-color: #222;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        header.sticky {
-            background-color: #222;
-        }
-
-        h1, h2 {
-            color: #fff;
-        }
-
-        p {
-            color: #aaa;
-            text-align: center; /* Center align the paragraph */
-        }
-
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #111;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        label {
-            display: block;
-            margin-top: 10px;
-            color: #fff;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #6EC6D9;
-            color: #fff;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #6EC6D9;
-        }
-
-        footer a {
-            color: #6EC6D9;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: 6EC6D9;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <header>
+        <a href="index.html">Travel Adventure</a>
+    </header>
 
     <header id="main-header">
         <h1>Contact Us</h1>
     </header>
 
     <section>
-        <form>
+        <form id="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -123,29 +31,20 @@
             <button type="submit">Submit</button>
         </form>
 
+        <!-- Success Message -->
+        <p id="success-message" style="color: green; display: none;">Your message has been sent successfully!</p>
+
         <p>Have questions or need assistance? Reach out to us and start planning your next adventure!</p>
     </section>
 
     <footer>
-        <p>&copy; 2023 Travel Adventure. All rights reserved.<br>
-            <a href="aboutus.html">About Us</a><br>
-            <a href="contactus.html">Contact Us</a><br>
-            <a href="index.html">Home</a><br>
-        </p>
+        <p>&copy; 2025 Travel Adventure. All rights reserved.</p>
+        <p><a href="aboutus.html">About Us</a></p>
+        <p><a href="contactus.html">Customer Service</a></p>
     </footer>
 
-    <script>
-        window.onscroll = function() {
-            const header = document.getElementById('main-header');
-            const scrollPosition = window.scrollY;
-
-            if (scrollPosition > 100) {
-                header.classList.add('sticky');
-            } else {
-                header.classList.remove('sticky');
-            }
-        };
-    </script>
+    <!-- Firebase Script -->
+    <script type="module" src="firebase.js"></script>
 
 </body>
 </html>

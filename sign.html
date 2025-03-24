@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <h1>Travel Adventure</h1>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="traveling logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <a href="planner.html">Planner |</a>
+                <a href="dest.html">Destination Picker |</a>
+                <a href="pack.html">Packing Checker |</a>
+                <a href="iten.html">Itinerary |</a>
+                <a href="season.html">Travel Advice |</a>
+                <a href="sign.html">Sign Up / Log In</a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sign In / Sign Up Section -->
+    <div class="auth-container">
+        <h2>Sign In or Sign Up</h2>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <button id="sign-in">Sign In</button>
+        <button id="sign-up">Sign Up</button>
+        <p id="auth-message"></p>
+    </div>
+
+    <script type="module">
+        import { auth, database } from "./firebase-config.js";
+import { 
+    createUserWithEmailAndPassword, 
+    signInWithEmailAndPassword, 
+    onAuthStateChanged 
+} from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
+import { ref, set } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-database.js"; // Import database methods
+
+const emailInput = document.getElementById("email");
+const passwordInput = document.getElementById("password");
+const signInButton = document.getElementById("sign-in");
+const signUpButton = document.getElementById("sign-up");
+const authMessage = document.getElementById("auth-message");
+
+// Sign Up and Save User to Database
+signUpButton.addEventListener("click", async () => {
+    const email = emailInput.value;
+    const password = passwordInput.value;
+    
+    try {
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+        const user = userCredential.user;
+
+        // Save user data to the Realtime Database
+        await set(ref(database, 'users/' + user.uid), {
+            email: email,
+            createdAt: new Date().toISOString()
+        });
+
+        authMessage.textContent = "Account created successfully!";
+    } catch (error) {
+        authMessage.textContent = "Error: " + error.message;
+    }
+});
+
+// Sign In
+signInButton.addEventListener("click", async () => {
+    const email = emailInput.value;
+    const password = passwordInput.value;
+    
+    try {
+        await signInWithEmailAndPassword(auth, email, password);
+        authMessage.textContent = "Signed in successfully!";
+        setTimeout(() => {
+            window.location.href = "index.html"; // Redirect to home page
+        }, 1500);
+    } catch (error) {
+        authMessage.textContent = "Error: " + error.message;
+    }
+});
+
+
+        // Check Authentication State
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                authMessage.textContent = `Logged in as ${user.email}`;
+            } else {
+                authMessage.textContent = "Not logged in.";
+            }
+        });
+
+    </script>
+</body>
