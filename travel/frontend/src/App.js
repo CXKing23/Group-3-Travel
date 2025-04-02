@@ -15,7 +15,7 @@ function App() {
   return (
     
     <Router>
-              <Header></Header>
+      <Header></Header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/planner" element={<Planner />} />
@@ -26,7 +26,6 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
-
       <Footer></Footer>
     </Router>
 
