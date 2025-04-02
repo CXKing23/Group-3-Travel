@@ -10,7 +10,13 @@ git clone https://github.com/CXKing23/Group-3-Travel
 cd travel
 ```
 
-### **2. Setup the Backend**
+### **2. Install Dependencies**
+Ensure `concurrently` is installed in the root directory by running:
+```sh
+npm install concurrently
+```
+
+### **3. Setup the Backend**
 Navigate to the `backend` folder and initialize the backend:
 ```sh
 cd backend
@@ -18,15 +24,14 @@ npm init -y
 npm install express cors dotenv
 ```
 
-### **3. Setup the Frontend**
-Navigate to the `frontend` folder and install `nodemon`:
+### **4. Setup the Frontend**
+Navigate to the `frontend` folder and install dependencies:
 ```sh
 cd ../frontend
-npm i nodemon
 npm install react-router-dom
 ```
 
-### **4. Running the Project**
+### **5. Running the Project**
 The project uses `concurrently` to run both frontend and backend simultaneously. To start both:
 ```sh
 npm start
@@ -35,7 +40,7 @@ This will:
 - Start the backend on **port 5000**
 - Start the React frontend on **port 3000**
 
-### **5. Alternative: Running Individually**
+### **6. Alternative: Running Individually**
 If you want to start them separately:
 #### **Start Backend**
 ```sh
@@ -57,10 +62,7 @@ travel/
 │── README.md
 ```
 
-### **6. Additional Notes**
+### **7. Additional Notes**
 - The backend uses `express`, `cors`, and `dotenv`.
 - `nodemon` can be used in the backend for automatic restarts during development.
 - `concurrently` is used to run both servers with a single command.
-
-
-
