@@ -6,7 +6,7 @@ This project is structured with separate **frontend** and **backend** directorie
 
 ### **1. Clone the Repository**
 ```sh
-git clone [<repository-url>](https://github.com/CXKing23/Group-3-Travel)
+git clone <[repository-url](https://github.com/CXKing23/Group-3-Travel)>
 cd travel
 ```
 
