@@ -152,3 +152,7 @@ a:hover {
     border-radius: 10px;
     margin-bottom: 20px;
 }
+.active {
+    color: rgb(0, 174, 255);
+    font-weight: bold;
+}

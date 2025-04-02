@@ -6,7 +6,12 @@
     background-color: #f9f9f9;
     text-align: center;
 }
+h2{
+    color: black;
+    margin-top: 75px;
+    text-align: left;
 
+}
 .question {
     margin-bottom: 20px;
     text-align: left;
@@ -14,7 +19,13 @@
 
 .question h3 {
     margin-bottom: 10px;
+    color: black;
 }
+
+label{
+    color: black;
+  }
+  
 
 .btn {
     background-color: #000;
@@ -31,6 +42,7 @@
 }
 
 .result {
+    color: black;
     margin-top: 20px;
     font-size: 1.2em;
     font-weight: bold;

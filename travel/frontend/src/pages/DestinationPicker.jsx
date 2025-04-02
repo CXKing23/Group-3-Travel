@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./DestinationPicker.css"; // Import external CSS
+import "../styles/DestinationPicker.css"; // Import external CSS
 
 const DestinationPicker = () => {
   const [result, setResult] = useState("");
@@ -44,6 +44,7 @@ const DestinationPicker = () => {
   };
 
   return (
+    <div>
     <div className="quiz-container">
       <h2>Find Your Next Travel Destination</h2>
 
@@ -80,9 +81,9 @@ const DestinationPicker = () => {
       </div>
 
       <button className="btn" onClick={findDestination}>Find My Destination</button>
-
+     
       {result && <div className="result">{result}</div>}
-    </div>
+      </div></div>
   );
 };
 
