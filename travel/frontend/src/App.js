@@ -9,6 +9,8 @@ import Itinerary from "./pages/Itinerary";
 import TravelAdvice from "./pages/TravelAdvice";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import Countries from "./pages/Countries.jsx";
+import CountryRouter from "./pages/CountryRouter.jsx";
 import Footer from "./components/Footer.jsx";
 
 function App() {
@@ -25,7 +27,9 @@ function App() {
         <Route path="/travel-advice" element={<TravelAdvice />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/countries" element={<Countries />} />
       </Routes>
+      <CountryRouter></CountryRouter>
       <Footer></Footer>
     </Router>
 

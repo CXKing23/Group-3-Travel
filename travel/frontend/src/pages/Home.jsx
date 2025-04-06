@@ -4,7 +4,6 @@ import Header from "../components/Header";
 const Home = () => {
   return (
     <div>
-      <Header /> 
 
       <section>
         <h2 id="headerExplore">Explore Destinations</h2>
