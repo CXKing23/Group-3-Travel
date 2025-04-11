@@ -1,12 +1,12 @@
 import './styles.css';
 import React, { useState, useEffect } from 'react';
-import { auth, database } from './firebase';
+import { auth, db } from './firebase';
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  onAuthStateChanged,
+  onAuthStateChanged
 } from 'firebase/auth';
-import { ref, set } from 'firebase/database';
+import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 
 const Sign = () => {
   const [email, setEmail] = useState('');
@@ -18,34 +18,34 @@ const Sign = () => {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
 
-      // Save user info to Realtime Database
-      await set(ref(database, 'users/' + user.uid), {
+      // Save user info to Firestore
+      await setDoc(doc(db, 'users', user.uid), {
         email,
-        createdAt: new Date().toISOString(),
+        createdAt: serverTimestamp()
       });
 
-      setAuthMessage('Account created successfully!');
+      setAuthMessage('✅ Account created successfully!');
     } catch (error) {
-      setAuthMessage('Error: ' + error.message);
+      setAuthMessage('❌ Error: ' + error.message);
     }
   };
 
   const handleSignIn = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      setAuthMessage('Signed in successfully!');
+      setAuthMessage('✅ Signed in successfully!');
       setTimeout(() => {
         window.location.href = '/'; // Redirect to homepage
       }, 1500);
     } catch (error) {
-      setAuthMessage('Error: ' + error.message);
+      setAuthMessage('❌ Error: ' + error.message);
     }
   };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        setAuthMessage(`Logged in as ${user.email}`);
+        setAuthMessage(`🔒 Logged in as ${user.email}`);
       } else {
         setAuthMessage('Not logged in.');
       }

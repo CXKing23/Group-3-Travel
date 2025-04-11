@@ -66,14 +66,7 @@ const Home = () => {
         <h2>Browse Stories</h2>
         <Link to="/browse-stories">Click Here</Link>
         <p>Explore the travel stories shared by others to get inspiration and tips for your own adventure.</p>
-      </section>
-
-      {/* 🆕 Sign In / Sign Up Section */}
-      <section>
-        <h2>Sign In / Sign Up</h2>
-        <Link to="/sign">Click Here</Link>
-        <p>Create an account or log in to keep track of your trips and share stories with the Travel Adventure community.</p>
-        <img className="about-image" src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="Sign In / Sign Up" />
+        <img className="about-image" src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="Browse Stories" />
       </section>
     </div>
   );
