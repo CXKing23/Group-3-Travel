@@ -1,0 +1,10 @@
+git fetch
+git checkout <branch-Name>
+#Code
+Click Source Control on Left (3 from Top)
+Dont Click Commit!!!!!!
+Add Message
+Click Dropdown next to Commit
+Click Commit and Push 
+
+Go back to Github
