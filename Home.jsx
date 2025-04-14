@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "../components/Header"; 
+import travelImage from "../img/shareyourtravel.png"
 
 const Home = () => {
   return (
@@ -50,8 +51,25 @@ const Home = () => {
         <p>Gain insightful guidance on the best season to visit your chosen destination.</p>
         <img className="about-image" src="https://images.saymedia-content.com/.image/ar_16:9,c_fill,cs_srgb,fl_progressive,q_auto:eco,w_1200/MTg3MzY3NTczNTUyMTEzMjEy/benefits-of-traveling-abroad.jpg" alt="Travel Advice" />
       </section>
+
+      {/* 🆕 Travel Story Submission Section */}
+      <section>
+        <h2>Share Your Travel Story</h2>
+        <Link to="/submit">Click Here</Link>
+        <p>
+          As a traveler, share your experiences, tips, and adventures with the world! Add media and tags to inspire others.
+        </p>
+        <img className="about-image" src={travelImage} alt="Share Your Story"/>
+      </section>
+
+      <section>
+        <h2>Browse Stories</h2>
+        <Link to="/browse-stories">Click Here</Link>
+        <p>Explore the travel stories shared by others to get inspiration and tips for your own adventure.</p>
+        <img className="about-image" src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="Browse Stories" />
+      </section>
     </div>
   );
-}
+};
 
 export default Home;
