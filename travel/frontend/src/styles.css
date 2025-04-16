@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 18px;
+}
+
+
+header {
+    background-color: #000;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+section {
+    padding: 20px;
+    margin-top: 60px;
+    width: 100%;
+    background-color: #000;
+    flex: 1;
+}
+
+footer {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header.sticky {
+    background-color: #222;
+}
+
+h1, h2 {
+    color: #fff;
+}
+
+p {
+    color: #aaa;
+}
+
+a {
+    color: #6EC6D9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6EC6D9;
+}
+
+#headerExplore{
+    margin-top: 75px;
+}
+
+.about-image {
+    width: 100%; /* Fill up the entire width of the container */
+    max-width: 700px; /* Slightly larger maximum width */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.logo {
+height: 100px; /* Adjust this value as needed */
+ width: auto; /* Keeps the aspect ratio */
+}
+.logo-container {
+position: absolute; /* Enables top-left positioning */
+top: 10px; /* Adjust the distance from the top */
+left: 20px; /* Adjust the distance from the left */
+}
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 18px;
+}
+
+header {
+    background-color: #000;
+    color: #6EC6D9;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header a {
+    color: white; 
+    text-decoration: none; 
+}
+
+header a:hover {
+    color: 6EC6D9; 
+}
+
+section {
+    padding: 20px;
+    margin-top: 60px;
+    width: 100%;
+    background-color: #000;
+    flex: 1;
+}
+
+footer {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header.sticky {
+    background-color: #222;
+}
+
+h1, h2 {
+    color: #fff;
+}
+
+p {
+    color: #aaa;
+}
+
+a {
+    color: #6EC6D9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6EC6D9;
+}
+
+.about-image {
+    width: 100%; /* Fill up the entire width of the container */
+    max-width: 700px; /* Slightly larger maximum width */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.active {
+    color: rgb(0, 174, 255);
+    font-weight: bold;
+}
