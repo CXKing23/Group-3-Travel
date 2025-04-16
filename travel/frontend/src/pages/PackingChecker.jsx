@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+
 import "./styles.css";
+import styles  from "../styles/PackingChecker.css"
+
 
 const initialChecklist = [
   { id: "passport", label: "Passport", checked: false },
@@ -48,7 +51,7 @@ const PackingChecklist = () => {
             id={item.id}
             checked={item.checked}
             onChange={() => toggleItem(item.id)}
-          />
+          ></input>
           <label htmlFor={item.id}>{item.label}</label>
         </div>
       ))}

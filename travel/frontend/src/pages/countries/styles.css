@@ -283,3 +283,15 @@ body {
     min-height: 100vh;
     padding-top: 80px; /* Prevents elements from being hidden under the header */
 }
+
+label{
+    display: inline;
+}
+input[type="checkbox"]{
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+input[type="text"] {
+    width: 50%;
+  }

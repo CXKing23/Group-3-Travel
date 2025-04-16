@@ -86,20 +86,9 @@ const SamoaPage = () => {
         </div>
       </section>
 
-      <footer>
-        <p>
-          &copy; 2025 Travel Adventure. All rights reserved.
-          <br />
-          <a href="aboutus.html">About Us</a>
-          <br />
-          <a href="contactus.html">Contact Us</a>
-          <br />
-          <a href="index.html">Home</a>
-          <br />
-        </p>
-      </footer>
+      
     </div>
   );
 };
 
-export default Page;
+export default SamoaPage;
