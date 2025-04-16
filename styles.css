@@ -1,286 +1,181 @@
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-size: 18px;
-  }
-  
-  
-  header {
-    background-color: #000;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-  }
-  
-  section {
-    padding: 20px;
-    margin-top: 60px;
-    width: 100%;
-    background-color: #000;
-    flex: 1;
-  }
-  
-  footer {
-    background-color: #222;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  header.sticky {
-    background-color: #222;
-  }
-  
-  h1, h2 {
-    color: #000;
-  }
-  
-  p {
-    color: #aaa;
-  }
-  
-  a {
-    color: #6EC6D9;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  a:hover {
-    color: #6EC6D9;
-  }
-  
-  #headerExplore{
-    margin-top: 75px;
-  }
-  
-  .about-image {
-    width: 100%; /* Fill up the entire width of the container */
-    max-width: 700px; /* Slightly larger maximum width */
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  .logo {
-  height: 100px; /* Adjust this value as needed */
-  width: auto; /* Keeps the aspect ratio */
-  }
-  .logo-container {
-  position: absolute; /* Enables top-left positioning */
-  top: 10px; /* Adjust the distance from the top */
-  left: 20px; /* Adjust the distance from the left */
-  }
-  body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-size: 18px;
-  }
-  
-  header {
-    background-color: #000;
-    color: #6EC6D9;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-  }
-  
-  header a {
-    color: white; 
-    text-decoration: none; 
-  }
-  
-  header a:hover {
-    color: 6EC6D9; 
-  }
-  
-  section {
-    padding: 20px;
-    margin-top: 60px;
-    width: 100%;
-    background-color: #000;
-    flex: 1;
-  }
-  
-  footer {
-    background-color: #222;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  header.sticky {
-    background-color: #222;
-  }
-  
-  
-  p {
-    color: #aaa;
-  }
-  
-  a {
-    color: #6EC6D9;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  a:hover {
-    color: #6EC6D9;
-  }
-  
-  .about-image {
-    width: 100%; /* Fill up the entire width of the container */
-    max-width: 700px; /* Slightly larger maximum width */
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  header {
-    background-color: #000;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-  }
-  
-  a {
-    color: #6EC6D9;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  a:hover {
-    color: #6EC6D9;
-  }
-  
-  body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  form {
-    max-width: 600px;
-    width: 100%;
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin: 10px 0;
-    color: #fff;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-  }
-  
-  button {
-    background-color: #6EC6D9;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #6EC6D9;
-  }
-  
-  h2 {
-    color: #6EC6D9;
-    margin-top: 20px;
-  }
-  
-  #totalCost {
-    color: #fff;
-  }
-  
-  footer {
-    background-color: #222;
-    padding: 10px 0;
-    text-align: center;
-    margin-top: auto;
-    width: 100%;
-  }
-  
-  footer a {
-    color: #6EC6D9;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  footer a:hover {
-    color: #6EC6D9;
-  }
-  
-  /* Ensure the auth container is below the header and visible */
-  .auth-container {
-    text-align: center;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    width: 320px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: block; /* Ensure it's visible */
-    position: relative; /* Make sure it stays in place */
-    z-index: 10; /* Ensures it's not hidden behind other elements */
-  }
-  
-  /* Ensure inputs and buttons are clearly visible */
-  .auth-container input,
-  .auth-container button {
-    display: block;
-    width: 90%;
-    margin: 10px auto;
-    padding: 12px;
-    font-size: 16px;
-  }
-  
-  /* Make sure the header does not hide content */
-  #main-header {
-    position: relative;
-    z-index: 100;
-    background: rgb(0, 0, 0);
-    padding: 15px;
-    text-align: center;
-  }
-  
-  /* Ensure the body has enough space */
-  body {
-    min-height: 100vh;
-    padding-top: 80px; /* Prevents elements from being hidden under the header */
-  }
-  
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 80px; /* Prevents elements from being hidden under the header */
+  font-size: 18px;
+}
+
+header {
+  background-color: #000;
+  color: #6EC6D9;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+header.sticky {
+  background-color: #222;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #6EC6D9;
+}
+
+section {
+  padding: 20px;
+  margin-top: 60px;
+  width: 100%;
+  background-color: #000;
+  flex: 1;
+}
+
+footer {
+  background-color: #222;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+footer a {
+  color: #6EC6D9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #6EC6D9;
+}
+
+h1, h2 {
+  color: #000;
+}
+
+h2 {
+  color: #6EC6D9;
+  margin-top: 20px;
+}
+
+p {
+  color: #aaa;
+}
+
+a {
+  color: #6EC6D9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #6EC6D9;
+}
+
+#headerExplore {
+  margin-top: 75px;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.logo-container {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+form {
+  max-width: 600px;
+  width: 100%;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  color: #fff;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #6EC6D9;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6EC6D9;
+}
+
+#totalCost {
+  color: #fff;
+}
+
+/* Auth container styles */
+.auth-container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+.auth-container input,
+.auth-container button {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 12px;
+  font-size: 16px;
+}
+
+#main-header {
+  position: relative;
+  z-index: 100;
+  background: rgb(0, 0, 0);
+  padding: 15px;
+  text-align: center;
+}
