@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Dark background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #4e4e4e; /* Dark container background */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #6EC6D9; /* Blue color for headings */
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  select {
+    padding: 10px;
+    font-size: 1em;
+    width: 50%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #000000; /* Darker border */
+  }
+  
+  #visa-info {
+    display: none;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #333; /* Dark background for visa info */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #visa-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #6EC6D9; /* Blue color for subheadings */
+  }
+  
+  #visa-info p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #aaa; /* Lighter gray text for paragraphs */
+  }
+  a {
+    color: rgb(73, 165, 201); /*  All links will be green */
+  }
+  .info-section {
+    margin-top: 50px;
+  }
+  
+  .info-section h2 {
+    font-size: 1.8em;
+    color: #6EC6D9; /* Blue color for section headings */
+  }
+  
+  .info-section p {
+    font-size: 1em;
+    color: #bbb; /* Lighter gray color for section text */
+    line-height: 1.6;
+  }
+  
+  .visa-type-boxes {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .visa-type-box {
+    background-color: #090f18; /* Dark background */
+    color: #6EC6D9; /* Blue text */
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .visa-type-box:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .visa-description {
+    display: none;
+    background-color: #444; /* Dark background for description */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #fff; /* White text */
+  }
+  
