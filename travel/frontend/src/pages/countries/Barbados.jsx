@@ -10,7 +10,7 @@ const BarbadosTravel = () => {
 
       <section>
         <h2>Our Story</h2>
-        <img className="about-image" src="norway.png" alt="Norway" />
+        <img className="about-image" src="barbados.png" alt="Barbados" />
         <p>Barbados, a gem of the Caribbean, is known for its white sandy beaches, crystal-clear waters, and vibrant culture. Whether you're looking to relax on the shore, explore historic sites, or enjoy world-famous rum, Barbados has something for every traveler.</p>
 
         <p>At Travel Adventure, we are here to guide you through the island’s stunning landscapes, rich history, and exciting activities. From snorkeling in turquoise waters to discovering colonial architecture, Barbados is a dream destination.</p>
