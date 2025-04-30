@@ -10,7 +10,7 @@ const ArgentinaTravel = () => {
 
       <section>
         <h2>Our Story</h2>
-        <img className="about-image" src="norway.png" alt="Norway" />
+        <img className="about-image" src="argentina.png" alt="Argentina" />
         <p>Argentina is a land of passion, from the lively streets of Buenos Aires to the breathtaking landscapes of Patagonia. As the birthplace of tango, the country has a rich cultural heritage, blending European influences with Latin American traditions. Its diverse geography offers everything from Andean peaks to lush vineyards and vast pampas.</p>
 
 
