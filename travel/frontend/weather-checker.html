@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Checker</title>
+</head>
+<body>
+  <h1>Weather Checker</h1>
+  <input type="text" id="countryInput" placeholder="Enter country or city" />
+  <button onclick="getWeather()">Check Weather</button>
+  <div id="weatherOutput"></div>
+
+  <script>
+    async function getWeather() {
+      const country = document.getElementById("countryInput").value;
+      const response = await fetch(`http://localhost:3001/weather?country=${country}`);
+      const data = await response.json();
+
+      if (data.main) {
+        document.getElementById("weatherOutput").innerHTML = `
+          <h3>${data.name}</h3>
+          <p>Temperature: ${data.main.temp}°C</p>
+          <p>Weather: ${data.weather[0].description}</p>
+        `;
+      } else {
+        document.getElementById("weatherOutput").innerHTML = "Location not found.";
+      }
+    }
+  </script>
+</body>
+</html>
