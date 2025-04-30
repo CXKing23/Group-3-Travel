@@ -32,6 +32,14 @@ const Home = () => {
       </section>
 
       <section>
+  <h2>Visas</h2>
+  <Link to="/visa">Click Here</Link>
+  <p>Learn more about Visas here</p>
+  <img className="about-image" src="visa.jpeg" alt="Visa" />
+</section>
+
+
+      <section>
         <h2>Packing</h2>
         <Link to="/packing-checker">Click Here</Link>
         <p>Fill out this checklist of items to pack</p>
